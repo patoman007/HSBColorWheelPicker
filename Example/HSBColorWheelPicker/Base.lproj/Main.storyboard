@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HSBColorWheelPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdu-pj-aJI" customClass="HSBColorWheel" customModule="HSBColorWheelPicker">
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Zg-mV-jiB"/>
+                                    <constraint firstAttribute="height" constant="240" id="Zfx-Ba-gNg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="colorSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="wheelDivisions">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="colorSeparation">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGS-Sb-AIN">
+                                <rect key="frame" x="130" y="430" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4Ft-BU-yOX"/>
+                                    <constraint firstAttribute="height" constant="30" id="O77-k5-xpO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9my-z0-Xgr">
+                                <rect key="frame" x="121.5" y="408" width="77" height="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yGS-Sb-AIN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8br-8B-ZWL"/>
+                            <constraint firstItem="Zdu-pj-aJI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9e9-Z5-8tn"/>
+                            <constraint firstItem="Zdu-pj-aJI" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="nxg-bU-R23"/>
+                            <constraint firstItem="yGS-Sb-AIN" firstAttribute="top" secondItem="9my-z0-Xgr" secondAttribute="bottom" constant="8" id="pyb-fN-wZT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yGS-Sb-AIN" secondAttribute="bottom" constant="20" id="whC-4g-C3j"/>
+                            <constraint firstItem="9my-z0-Xgr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="yLG-nd-epD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorWheel" destination="Zdu-pj-aJI" id="k5F-cD-Zat"/>
+                        <outlet property="selectedColorView" destination="yGS-Sb-AIN" id="FSx-gT-Noy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,16 @@
+PODS:
+  - HSBColorWheelPicker (0.1.0)
+
+DEPENDENCIES:
+  - HSBColorWheelPicker (from `../`)
+
+EXTERNAL SOURCES:
+  HSBColorWheelPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HSBColorWheelPicker: 39c29e9af38ba241f6b9a96f5d18d7f10d6a408a
+
+PODFILE CHECKSUM: 3e1603aeb5cf3c4f1e952b78de187405c8d60060
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,6 @@
+framework module Pods_HSBColorWheelPicker_Example {
+  umbrella header "Pods-HSBColorWheelPicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

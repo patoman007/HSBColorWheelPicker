@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSBColorWheelPicker_Example' do
+  pod 'HSBColorWheelPicker', :path => '../'
+
+  target 'HSBColorWheelPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
