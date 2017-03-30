@@ -19,11 +19,9 @@ class ViewController: UIViewController, HSBColorWheelDelegate {
   
   @IBOutlet weak var selectedColorView: UIView!
   
-  
   // HSBColorWheelDelegate
   
   func colorWheel(_ colorWheel: HSBColorWheel, didSelectColor color: UIColor) {
-    print("a")
     DispatchQueue.main.async {
       self.selectedColorView.backgroundColor = color
     }

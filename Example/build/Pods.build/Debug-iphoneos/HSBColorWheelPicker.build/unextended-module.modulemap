@@ -1,0 +1,10 @@
+framework module HSBColorWheelPicker {
+  umbrella header "HSBColorWheelPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module HSBColorWheelPicker.__Swift {
+    exclude header "HSBColorWheelPicker-Swift.h"
+}

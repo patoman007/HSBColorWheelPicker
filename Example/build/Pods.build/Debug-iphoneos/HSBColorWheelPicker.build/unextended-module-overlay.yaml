@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/patoman/Documents/Projects/Libraries/HSBColorWheelPicker/HSBColorWheelPicker/Example/build/Debug-iphoneos/HSBColorWheelPicker/HSBColorWheelPicker.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/patoman/Documents/Projects/Libraries/HSBColorWheelPicker/HSBColorWheelPicker/Example/build/Pods.build/Debug-iphoneos/HSBColorWheelPicker.build/unextended-module.modulemap',
+    }]
+  }]
+}

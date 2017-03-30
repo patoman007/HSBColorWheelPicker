@@ -92,7 +92,7 @@ class ColorView: UIView {
     shape.path = UIBezierPath(arcCenter: shapeCenter,
                               radius: shapeRadius,
                               startAngle: 0,
-                              endAngle: CGFloat(2*M_PI),
+                              endAngle: CGFloat(2 * Double.pi),
                               clockwise: true).cgPath
     
     shape.strokeColor = showEdge ? edgeColor.cgColor : UIColor.clear.cgColor

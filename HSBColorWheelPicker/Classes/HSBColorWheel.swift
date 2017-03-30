@@ -114,7 +114,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
     wheelLayer.path = UIBezierPath(arcCenter: wheelCenter,
                                    radius: wheelRadius,
                                    startAngle: 0,
-                                   endAngle: CGFloat(2 * M_PI),
+                                   endAngle: CGFloat(2 * Double.pi),
                                    clockwise: true).cgPath
     wheelLayer.lineWidth = wheelEdgeWidth
     wheelLayer.strokeColor = wheelEdgeColor.cgColor
@@ -123,7 +123,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
   }
   
   private func drawColors() {
-    let pi_rad = CGFloat(M_PI)
+    let pi_rad = CGFloat(Double.pi)
     let offsetAngle = pi_rad / wheelDivisions
     let end = Int(wheelDivisions * 2)
     
@@ -197,7 +197,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
     selectedColorLayer!.path = UIBezierPath(arcCenter: point,
                                             radius: radius,
                                             startAngle: 0,
-                                            endAngle: CGFloat(2*M_PI),
+                                            endAngle: CGFloat(2 * Double.pi),
                                             clockwise: true).cgPath
     
     layer.addSublayer(selectedColorLayer!)
@@ -228,7 +228,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
   }
   
   private func getDegAngleBetweenWheelCenterAndPoint(_ point:CGPoint) -> CGFloat {
-    let pi_rad = CGFloat(M_PI)
+    let pi_rad = CGFloat(Double.pi)
     let dx = point.x - wheelCenter.x
     let dy = point.y - wheelCenter.y
     let angle = atan2(dy, dx) * 180 / pi_rad
