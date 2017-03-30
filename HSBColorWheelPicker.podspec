@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSBColorWheelPicker'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'HSBColorWheelPicker is a lightweight color picker for iOS that is easy to
                         use for both users and developers'
 
