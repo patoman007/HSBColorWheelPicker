@@ -7,4 +7,5 @@ framework module HSBColorWheelPicker {
 
 module HSBColorWheelPicker.Swift {
     header "HSBColorWheelPicker-Swift.h"
+    requires objc
 }

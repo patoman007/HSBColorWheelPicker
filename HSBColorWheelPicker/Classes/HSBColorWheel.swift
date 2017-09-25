@@ -68,7 +68,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
   @IBInspectable public var showColorEdge:Bool = true { didSet { setNeedsDisplay() } }
   @IBInspectable public var colorEdgeWidth:CGFloat = 0.5 { didSet { setNeedsDisplay()} }
   @IBInspectable
-  public var colorEdgeColor:UIColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.5) {
+  public var colorEdgeColor:UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5) {
     didSet {
       setNeedsDisplay()
     }
@@ -159,7 +159,7 @@ public class HSBColorWheel : UIView, ColorViewDelegate {
   
   private func drawCenterColor() {
     let frame = CGRect(x: wheelCenter.x, y: wheelCenter.y, width: colorSize, height: colorSize)
-    let bgColor = UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
+    let bgColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     let color = ColorView(frame: frame,
                           center: wheelCenter,
                           bgColor: bgColor,

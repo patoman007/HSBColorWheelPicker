@@ -24,7 +24,7 @@ class ColorView: UIView {
   
   var showEdge = true { didSet { setNeedsDisplay() } }
   var edgeWidth:CGFloat = 0.5 { didSet { setNeedsDisplay() } }
-  var edgeColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.5) {
+  var edgeColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5) {
     didSet {
       setNeedsDisplay()
     }
@@ -113,7 +113,7 @@ class ColorView: UIView {
   
   // MARK: - Selectors
   
-  func handleTapGesture(_ gesture:UITapGestureRecognizer) {
+  @objc func handleTapGesture(_ gesture:UITapGestureRecognizer) {
     let touchPoint = gesture.location(in: self)
     if isAValidTouch(touchPoint) {
       delegate?.colorView(self, didSetlectColor: bgColor)
